@@ -1,0 +1,17 @@
+
+void setup() {
+Serial.begin(9600);
+Serial.println("ASCII-tabellen");
+}
+
+int Byte = 33;
+void loop() 
+{  
+  while (Byte<127) {  
+  Serial.print(Byte);
+  Serial.print(" ");
+  Serial.write(Byte);
+  Serial.println();
+ Byte++; 
+    } 
+}
